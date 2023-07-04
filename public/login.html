@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>VaidrollTeamLogin5</title>
+     <link rel="stylesheet" href="login.css">
+	<script src="reCAPTCHALogin.js"></script>
+	<script src="reCAPTCHARegistrar.js"></script>
+		
+</head>
+<body>
+    <div class="cajafuera">
+    <div class="formulariocaja">
+        <div class="botondeintercambiar">
+            <div id="btnvai"></div>
+             <button type="button" class="botoncambiarcaja" onclick="loginvai()" id="vaibtnlogin">Login</button>
+             <button type="button" class="botoncambiarcaja" onclick="registrarvai()" id="vaibtnregistrar">Registrar</button>
+		</div>
+		
+		<!--Formulario para el login -->
+        <form id="frmlogin" class="grupo-entradas" method="POST" action="login.php">
+		<div class="logovai"><img src="logo.png"></div>
+		<b>&#128100; Usuario</b>
+        <input type="text" class="cajaentradatexto" name="txtusuario" id="txtusuario" required>
+		<b>&#128274; Password</b>
+        <input type="password" class="cajaentradatexto" name="txtpassword" required>
+		<div><b>&#10095; Verificación</b></div>
+		
+        <input type="text" class="cajaentradarecaptcha" id="txtrecaptcha" required>
+		
+		<div id="vericodigovai" onclick="crearrecaptcha()" class="fondorecaptcha">
+		 
+			  </div>
+<!--Visita VaidrollTeam.blogspot.com para más códigos -->
+
+        <button type="submit" class="botonenviar" name="btnloginx">Iniciar sesión</button>
+        </form>
+		<!--Formulario para el login -->
+		
+		<!--Formulario para registrar -->
+        <form id="frmregistrar" class="grupo-entradas" method="POST" action="registrar.php">
+				<div class="logovai"><img src="logo.png"></div>
+		<b>&#128100; Usuario</b>
+        <input type="text" class="cajaentradatexto" name="txtusuario2" id="txtusuario2" required>
+			<b>&#128274; Password</b>
+        <input type="password" class="cajaentradatexto" required name="txtpassword">
+				<div><b>&#10095; Verificación</b></div>
+		
+        <input type="text" class="cajaentradarecaptcha" id="txtrecaptcha2" required>
+		
+		<div id="vericodigovai2" onclick="crearrecaptcha2()" class="fondorecaptcha">
+	
+		</div>
+		 
+        <button type="submit" class="botonenviar" name="btnregistrarx" id="btnregistrarx">Registrar</button>
+        </form>
+		<!--Formulario para registrar -->
+		
+        </div>
+    </div>
+			<script src="BotonCambiaFormularios.js"></script>
+</body>
+</html>

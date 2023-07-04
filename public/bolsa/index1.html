@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Bolsa de Valores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>SIMULADOR DE BOLSA DE VALORES</h1>
+    <div class="auth-buttons">
+      <a href="login.html" class="login-button">Iniciar sesión</a>
+      <a href="login.html" class="register-button">Registrarse</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Mercado</a></li>
+      <li><a href="#">Empresas</a></li>
+      <li><a href="#">Economía</a></li>
+      <li><a href="#">Actualidad</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Últimas Noticias</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="simulator">
+      <h2>Simulador de Bolsa de Valores</h2>
+      <div id="stockPrices">
+        <div>
+          <h3>Índice Dow Jones:</h3>
+          <p id="dowJonesPrice">35,000</p>
+        </div>
+        <div>
+          <h3>Índice NASDAQ:</h3>
+          <p id="nasdaqPrice">15,000</p>
+        </div>
+        <div>
+          <h3>Índice S&P 500:</h3>
+          <p id="sp500Price">4,000</p>
+        </div>
+        <div>
+          <h3>Índice NASDAQ Composite:</h3>
+          <p id="nasdaqCompositePrice">12,000</p>
+        </div>
+      </div>
+      <button id="updateButton">Actualizar Precios</button>
+      <button id="resetButton">Resetear Precios</button>
+      <select id="intervalSelect">
+        <option value="1000">1 segundo</option>
+        <option value="3000">3 segundos</option>
+        <option value="5000">5 segundos</option>
+      </select>
+    </section>
+
+    <section id="chart">
+      <h2>Gráfica de Precios</h2>
+      <canvas id="chartCanvas"></canvas>
+    </section>
+  </main>
+  <div id="botPortfolio">
+    <h3>Cartera del Bot:</h3>
+    <p>Saldo disponible: <span id="botBalance">$10000</span></p>
+    <p>Cantidad de acciones en posesión: <span id="botShares">0</span></p>
+  </div>
+  
+  <div id="botTransactionHistory">
+    <h3>Historial de Transacciones:</h3>
+    <ul id="botTransactions">
+      <!-- Aquí se agregarán dinámicamente las transacciones -->
+    </ul>
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #170242;
+  color: #f5f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #161616;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #e91515;
+  text-decoration-style: solid;
+}
+
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+canvas {
+  width: 100%;
+  height: 400px;
+}
+
+#stockPrices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#stockPrices div {
+  flex-basis: 30%;
+}
+
+#stockPrices h3 {
+  margin-top: 0;
+}
+
+#stockPrices p {
+  margin-bottom: 0;
+}
+
+button {
+  padding: 10px;
+  background-color: #a2bc21;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+select {
+  padding: 10px;
+}
+
+
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons a {
+  display: block;
+  padding: 10px 20px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #0dee76;
+  text-decoration: none;
+  align-items: left;
+}
+
+.navbar {
+  background-color: #333;
+  color: #f7f4f4;
+}
